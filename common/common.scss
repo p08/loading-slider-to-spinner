@@ -14,7 +14,6 @@
     bottom: 0;
     left: auto;
     right: 0;
-    z-index: z("header") - 2;
     
     .loading-indicator {
       transform: none;
@@ -30,8 +29,20 @@
       border-radius: 50%;
       -webkit-animation: rotate-forever 1s infinite linear;
       animation: rotate-forever 1s infinite linear;
-      z-index: z("header") - 1;
     }
+    // Hide user menu while page loading
+    ~ .d-header-wrap {
+      &.drop-down-mode .d-header-icons .active .icon {
+        border-color: transparent;
+      }
+      .menu-panel.user-menu.revamped {
+        display: none;
+      }
+      .header-cloak {
+        display: none !important;
+      }
+    }
+    // Hide #main-outlet while page loading
     ~ #main-outlet-wrapper {
       #main-outlet {
         display: none;
