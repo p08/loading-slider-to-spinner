@@ -1,10 +1,8 @@
 .loading-indicator-container {
-  height: 0px;
+  display: none;
   &.loading,
   &.still-loading {
-    .loading-indicator {
-      display: none;
-    }
+    
     // Hide user menu while page loading
     ~ .d-header-wrap {
       &.drop-down-mode .d-header-icons .active .icon {
@@ -16,7 +14,8 @@
       .header-cloak {
         display: none !important;
       }
-    }    
+    }
+    
     // Add spinner
     ~ #main-outlet-wrapper {
       &:before {
@@ -30,11 +29,13 @@
         -webkit-animation: rotate-forever 1s infinite linear;
         animation: rotate-forever 1s infinite linear;
       }
+      
       // Hide #main-outlet while page loading
       #main-outlet {
         display: none;
       }
     }
+    
     // Hide modal while page loading
     ~ .modal-container {
       .d-modal {
