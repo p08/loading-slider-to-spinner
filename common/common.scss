@@ -17,7 +17,7 @@
         display: none !important;
       }
     }    
-    // Hide #main-outlet while page loading
+    // Add spinner
     ~ #main-outlet-wrapper {
       &:before {
         content: "";
@@ -30,9 +30,19 @@
         -webkit-animation: rotate-forever 1s infinite linear;
         animation: rotate-forever 1s infinite linear;
       }
+      // Hide #main-outlet while page loading
       #main-outlet {
         display: none;
       }
     }
+    // Hide modal while page loading
+    ~ .modal-container {
+      .d-modal {
+        display: none;
+      }
+      .modal-backdrop {
+        display: none;
+      }
+    }    
   }
 }
