@@ -1,5 +1,5 @@
 .loading-indicator-container {
-  height: 3px;
+  height: 0px;
   &.loading,
   &.still-loading {
     
@@ -27,19 +27,29 @@
 
 }
 
-      @keyframes fadeIn {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
-}
+/* Loading Animation */
+  @keyframes loading {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.7;
+    }
+  }
       
+      // Hide #main-outlet while page loading
+      .custom-topic-layout :nth-child(1), .custom-topic-layout :nth-child(2), #user-content :nth-child(1), #user-content :nth-child(2), .cooked {
+        color: transparent; /* make the text invisible */
+        user-select: none; /* prevent selection of the text */
+        background-color: #f3f3f3;
+    background: linear-gradient(90deg, transparent,
+            rgba(243,243,243, 1), transparent);
 
-      #main-outlet {
-        animation: fadeIn 0.4s;
-  opacity: 1;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-      }
+    animation: loading 0.8s infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate;
 
+      } 
 
        .custom-topic-layout, #user-content {
         overflow: hidden;;
