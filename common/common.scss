@@ -45,9 +45,8 @@
       }
       
       // Hide #main-outlet while page loading
-      #main-outlet {
-       color: RGBA(0,0,0,0);
-      }
+      #main-outlet:nth-child(1) { 
+  display: none; 
     }
     
     // Hide modal while page loading
