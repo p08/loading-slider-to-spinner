@@ -1,5 +1,5 @@
 .loading-indicator-container {
-  height: 0px;
+  height: 3px;
   &.loading,
   &.still-loading {
     
@@ -35,7 +35,7 @@
       
 
       #main-outlet {
-        animation: fadeIn 0.5s;
+        animation: fadeIn 0.3s;
          animation-iteration-count: 1;
       }
 
