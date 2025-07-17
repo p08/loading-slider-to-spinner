@@ -29,12 +29,12 @@
 }
 
       @keyframes fadeIn {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
       
 
-      #main-outlet {animation: fadeIn 5s;}
+      #main-outlet {animation: fadeIn 1s;}
 
 
        .custom-topic-layout, #user-content {
