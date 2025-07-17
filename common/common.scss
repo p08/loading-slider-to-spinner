@@ -33,7 +33,7 @@
       opacity: 1;
     }
     to {
-      opacity: 0.5;
+      opacity: 0.7;
     }
   }
       
@@ -43,12 +43,10 @@
         user-select: none; /* prevent selection of the text */
         background-color: #f3f3f3;
             background: -webkit-gradient(linear, left top,
-            right top, from(transparent),
+            right top, from(rgba(243,243,243, 0.7)),
             color-stop(rgba(243,243,243, 1)),
-            to(transparent));
+            to(rgba(243,243,243, 0.7));
 
-    background: linear-gradient(90deg, transparent,
-            rgba(243,243,243, 1), transparent);
 
     animation: loading 0.8s infinite;
           animation-iteration-count: infinite;
