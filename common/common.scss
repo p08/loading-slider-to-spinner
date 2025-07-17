@@ -24,19 +24,19 @@
 }
 
 /* Loading Animation */
-@keyframes loading {
+@keyframes FadeIn {
    0% {
       opacity: 1;
    }
    100% {
-      opacity: 0.8;
+      opacity: 0.6;
    }
 } 
       
       // Hide #main-outlet while page loading
      #main-outlet {
 
-          animation: loading 0.4s;
+          animation: FadeIn 0.5s;
           animation-iteration-count: 1;
           animation-direction: alternate;
 
