@@ -49,13 +49,7 @@
       } 
 
             .custom-topic-layout, #user-content :nth-child(1), .cooked {
-            background: -webkit-gradient(linear, left top,
-            right top, from(transparent),
-            color-stop(rgba(250,250,250, 0.6)),
-            to(transparent));
 
-    background: linear-gradient(90deg, transparent,
-            rgba(250,250,250, 0.6), transparent);
 
     animation: loading 0.8s infinite;
           animation-iteration-count: infinite;
