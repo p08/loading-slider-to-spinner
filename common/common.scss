@@ -29,8 +29,13 @@
 
 /* Loading Animation */
 @keyframes loading {
-    100% {
-        transform: translateX(100%);
+    from {
+      transform: translateX(-100%);
+      opacity: 0.25;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
     }
       }
       
@@ -47,7 +52,7 @@
     background: linear-gradient(90deg, transparent,
             rgba(243,243,243, 0.8), transparent);
             /* Adding animation */
-    animation: loading 0.8s infinite;
+    animation: loading 1.8s infinite;
           animation-iteration-count: infinite;
   animation-direction: alternate;
 
