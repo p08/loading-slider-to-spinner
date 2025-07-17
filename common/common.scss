@@ -28,16 +28,14 @@
 }
 
 /* Loading Animation */
-@keyframes loading {
+  @keyframes loading {
     from {
       transform: translateX(-100%);
-      opacity: 0.25;
     }
     to {
       transform: translateX(0%);
-      opacity: 1;
     }
-      }
+  }
       
       // Hide #main-outlet while page loading
       .custom-topic-layout :nth-child(1), .custom-topic-layout :nth-child(2), #user-content :nth-child(1), #user-content :nth-child(2) {
