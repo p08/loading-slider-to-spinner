@@ -30,7 +30,7 @@
 /* Loading Animation */
 @keyframes loading {
     100% {
-        transform: translateX(100%);
+        transform: translateX(50%);
     }
       }
       
@@ -39,7 +39,13 @@
         color: transparent; /* make the text invisible */
         user-select: none; /* prevent selection of the text */
         background-color: #f3f3f3;
+    background: -webkit-gradient(linear, left top,
+            right top, from(transparent),
+            color-stop(rgba(249, 249, 249, 0.7)),
+            to(transparent));
 
+    background: linear-gradient(90deg, transparent,
+            rgba(249, 249, 249, 0.7), transparent);
 
 
     /* Adding animation */
