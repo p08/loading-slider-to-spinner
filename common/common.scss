@@ -17,7 +17,8 @@
     }
     
     // Add spinner
-    ~ #main-outlet-wrapper :nth-child(10) {
+    ~ #main-outlet-wrapper {
+      &:after {
         background-color: #f9f9f9;
     display: block;
     content: "";
@@ -35,7 +36,7 @@
 
     /* Adding animation */
     animation: loading 1.8s infinite;
-
+      }
 
 /* Loading Animation */
 @keyframes loading {
