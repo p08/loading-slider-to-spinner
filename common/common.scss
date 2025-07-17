@@ -19,7 +19,6 @@
     // Add spinner
     ~ #main-outlet-wrapper {
       &:before {
-    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
     display: block;
     content: "";
     position: absolute;
@@ -40,10 +39,10 @@
 
 /* Loading Animation */
 @keyframes loading {
-  to {
-    background-position-x: -200%;
-  }
-}
+    100% {
+        transform: translateX(100%);
+    }
+      }
       
       // Hide #main-outlet while page loading
       .custom-topic-layout :nth-child(1), .custom-topic-layout :nth-child(2), #user-content :nth-child(1), #user-content :nth-child(2) {
