@@ -17,7 +17,7 @@
     }
     
     // Add spinner
-    ~ #main-outlet-wrapper {
+    ~ .posts-wrapper, .custom-topic-layout {
       &:before {
     display: block;
     content: "";
