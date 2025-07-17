@@ -27,14 +27,14 @@
     transform: translateX(-100%);
     background: -webkit-gradient(linear, left top,
             right top, from(transparent),
-            color-stop(rgba(249, 249, 249, 0.9)),
+            color-stop(rgba(249, 249, 249, 0.4)),
             to(transparent));
 
     background: linear-gradient(90deg, transparent,
-            rgba(249, 249, 249, 0.9), transparent);
+            rgba(249, 249, 249, 0.4), transparent);
 
     /* Adding animation */
-    animation: loading 0.8s infinite;
+    animation: loading 1.8s infinite;
 }
 
 /* Loading Animation */
