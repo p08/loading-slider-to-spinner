@@ -29,11 +29,11 @@
 
 /* Loading Animation */
   @keyframes loading {
-    from {
-      transform: translateX(-100%);
+    0% {
+      transform: scale(1);
     }
-    to {
-      transform: translateX(0%);
+    100% {
+      transform: scale(1.5);
     }
   }
       
