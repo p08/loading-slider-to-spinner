@@ -19,18 +19,16 @@
     // Add spinner
     ~ #main-outlet {
       &:before {
-    background: #eee;
-    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
-    border-radius: 5px;
-    background-size: 200% 100%;
-    animation: 1.5s shine linear infinite;
+        content: "";
+        width: 30px;
+        height: 30px;
+        margin: 40px auto;
+        border: 4px solid var(--primary-low-mid);
+        border-right-color: rgba(0,0,0,0);
+        border-radius: 50%;
+        -webkit-animation: rotate-forever 1s infinite linear;
+        animation: rotate-forever 1s infinite linear;
       }
-      @keyframes shine {
-  to {
-    background-position-x: -200%;
-  }
-}
-
       
       // Hide #main-outlet while page loading
       #main-outlet {
