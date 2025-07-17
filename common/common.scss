@@ -19,43 +19,25 @@
     // Add spinner
     ~ #main-outlet-wrapper {
       &:before {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 100%;
-
-}
-
-/* Loading Animation */
-  @keyframes loading {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0.7;
-    }
-  }
+        content: "";
+        width: 30px;
+        height: 30px;
+        margin: 40px auto;
+        border: 4px solid var(--primary-low-mid);
+        border-right-color: rgba(0,0,0,0);
+        border-radius: 50%;
+        -webkit-animation: rotate-forever 1s infinite linear;
+        animation: rotate-forever 1s infinite linear;
+      }
       
       // Hide #main-outlet while page loading
-      .custom-topic-layout :nth-child(1), .custom-topic-layout :nth-child(2), #user-content :nth-child(1), #user-content :nth-child(2), .cooked {
-        color: transparent; /* make the text invisible */
-        user-select: none; /* prevent selection of the text */
-        background-color: #f3f3f3;
-    background: linear-gradient(90deg, transparent,
-            rgba(243,243,243, 1), transparent);
-
-    animation: loading 0.8s infinite;
-          animation-iteration-count: infinite;
-  animation-direction: alternate;
-
-      } 
-
-       .custom-topic-layout, #user-content {
-        overflow: hidden;;
-      } 
-          
-      
+      #main-outlet {
+        animation: fadeIn 5s; 
+      }
+      @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+}
     }
     
     // Hide modal while page loading
