@@ -1,5 +1,5 @@
 .loading-indicator-container {
-  height: 0px;
+  height: 3px;
   &.loading,
   &.still-loading {
     
@@ -38,7 +38,7 @@
   }
       
       // Hide #main-outlet while page loading
-      .custom-topic-layout :nth-child(1), .custom-topic-layout :nth-child(2), #user-content :nth-child(1), #user-content :nth-child(2), .cooked {
+     #main-outlet {
         color: transparent; /* make the text invisible */
         user-select: none; /* prevent selection of the text */
         background-color: #f3f3f3;
