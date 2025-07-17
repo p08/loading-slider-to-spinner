@@ -48,7 +48,7 @@
       .custom-topic-layout :nth-child(1), .custom-topic-layout :nth-child(2), #user-content :nth-child(1), #user-content :nth-child(2) {
         color: transparent; /* make the text invisible */
         user-select: none; /* prevent selection of the text */
-               backgrounnd: #000;
+               backgrounnd: #000 !important;
       }
     }
     
