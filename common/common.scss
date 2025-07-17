@@ -45,7 +45,10 @@
       }
       
       // Hide #main-outlet while page loading
-
+      .custom-topic-layout, .footer-message {
+        display: none;
+      }
+      
     }
     
     // Hide modal while page loading
