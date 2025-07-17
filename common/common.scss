@@ -24,19 +24,21 @@
 }
 
 /* Loading Animation */
-  @keyframes loading {
-    from {
+@keyframes loading {
+   0% {
       opacity: 1;
-    }
-    to {
-      opacity: 0.2;
-    }
-  }
+      transform: translateY(0);
+   }
+   100% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+} 
       
       // Hide #main-outlet while page loading
      #main-outlet {
 
-          animation: loading 0.2s;
+          animation: loading 0.4s;
           animation-iteration-count: 1;
           animation-direction: alternate;
 
