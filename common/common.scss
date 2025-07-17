@@ -27,11 +27,11 @@
     transform: translateX(-100%);
     background: -webkit-gradient(linear, left top,
             right top, from(transparent),
-            color-stop(rgba(255, 255, 255, 0.2)),
+            color-stop(rgba(249, 249, 249, 0.9)),
             to(transparent));
 
     background: linear-gradient(90deg, transparent,
-            rgba(249, 249, 249, 0.2), transparent);
+            rgba(249, 249, 249, 0.9), transparent);
 
     /* Adding animation */
     animation: loading 0.8s infinite;
