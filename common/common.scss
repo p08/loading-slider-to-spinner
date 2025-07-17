@@ -38,7 +38,7 @@
   }
       
       // Hide #main-outlet while page loading
-      .custom-topic-layout :nth-child(1), .custom-topic-layout :nth-child(2), #user-content :nth-child(1), #user-content :nth-child(2) , .post-stream :nth-child(5) {
+      .custom-topic-layout :nth-child(1), .custom-topic-layout :nth-child(2), #user-content :nth-child(1), #user-content :nth-child(2), .post-stream :nth-child(5) , .post-stream :nth-child(4) {
         color: transparent; /* make the text invisible */
         user-select: none; /* prevent selection of the text */
         background-color: #f3f3f3;
