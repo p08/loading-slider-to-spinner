@@ -42,8 +42,15 @@
         color: transparent; /* make the text invisible */
         user-select: none; /* prevent selection of the text */
         background-color: #f3f3f3;
+            background: -webkit-gradient(linear, left top,
+            right top, from(transparent),
+            color-stop(rgba(243,243,243, 0.8)),
+            to(transparent));
 
-    animation: loading 1s infinite;
+    background: linear-gradient(90deg, transparent,
+            rgba(243,243,243, 0.8), transparent);
+
+    animation: loading 0.8s infinite;
           animation-iteration-count: infinite;
   animation-direction: alternate;
 
