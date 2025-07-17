@@ -33,20 +33,15 @@
       opacity: 1;
     }
     to {
-      opacity: 0.7;
+      opacity: 0.0;
     }
   }
       
       // Hide #main-outlet while page loading
      #main-outlet {
-        color: transparent; /* make the text invisible */
-        user-select: none; /* prevent selection of the text */
-        background-color: #f3f3f3;
-    background: linear-gradient(90deg, transparent,
-            rgba(243,243,243, 1), transparent);
 
-    animation: loading 0.8s infinite;
-          animation-iteration-count: infinite;
+    animation: loading 0.8s;
+          animation-iteration-count: 1;
   animation-direction: alternate;
 
       } 
