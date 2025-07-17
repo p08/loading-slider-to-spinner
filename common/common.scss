@@ -17,7 +17,7 @@
     }
     
     // Add spinner
-    ~ #main-outlet-wrapper {
+    ~ #main-outlet-wrapper :nth-child(1){
       &:before {
     display: block;
     content: "";
