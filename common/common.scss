@@ -16,16 +16,6 @@
       }
     }
     
-    // Add spinner
-    ~ #main-outlet-wrapper {
-      &:before {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 100%;
-
-}
 
 /* Loading Animation */
 
