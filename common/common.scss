@@ -19,15 +19,29 @@
     // Add spinner
     ~ #main-outlet-wrapper {
       &:before {
-        content: "";
-        width: 30px;
-        height: 30px;
-        margin: 40px auto;
-        border: 4px solid var(--primary-low-mid);
-        border-right-color: rgba(0,0,0,0);
-        border-radius: 50%;
-        -webkit-animation: rotate-forever 1s infinite linear;
-        animation: rotate-forever 1s infinite linear;
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    background: -webkit-gradient(linear, left top,
+            right top, from(transparent),
+            color-stop(rgba(255, 255, 255, 0.2)),
+            to(transparent));
+
+    background: linear-gradient(90deg, transparent,
+            rgba(255, 255, 255, 0.2), transparent);
+
+    /* Adding animation */
+    animation: loading 0.8s infinite;
+}
+
+/* Loading Animation */
+@keyframes loading {
+    100% {
+        transform: translateX(100%);
+    }
       }
       
       // Hide #main-outlet while page loading
