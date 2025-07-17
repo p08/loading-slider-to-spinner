@@ -42,7 +42,8 @@
         color: transparent; /* make the text invisible */
         user-select: none; /* prevent selection of the text */
         background-color: #f3f3f3;
-
+    background: linear-gradient(90deg, transparent,
+            rgba(243,243,243, 1), transparent);
 
     animation: loading 0.8s infinite;
           animation-iteration-count: infinite;
