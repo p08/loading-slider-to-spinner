@@ -30,7 +30,7 @@
 /* Loading Animation */
 @keyframes loading {
     100% {
-        transform: translateX(50%);
+        transform: translateX(100%);
     }
       }
       
@@ -49,8 +49,8 @@
 
       } 
       
-            .custom-topic-layout  {
-                &:after {
+           .custom-topic-layout :nth-child(1), .custom-topic-layout :nth-child(2), #user-content :nth-child(1), #user-content :nth-child(2)  {
+                &:before {
  display: block;
     content: "";
     position: absolute;
