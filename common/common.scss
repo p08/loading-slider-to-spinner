@@ -29,14 +29,14 @@
       opacity: 1;
     }
     to {
-      opacity: 0.2;
+      opacity: 0.0;
     }
   }
       
       // Hide #main-outlet while page loading
      #main-outlet {
 
-          animation: loading 0.6s;
+          animation: loading 0.5s;
           animation-iteration-count: 1;
           animation-direction: alternate;
 
