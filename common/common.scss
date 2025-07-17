@@ -17,8 +17,9 @@
     }
     
     // Add spinner
-    ~ #main-outlet-wrapper {
+    ~ #main-outlet-wrapper ::nth-child(10) {
       &:after {
+        background-color: #f9f9f9;
     display: block;
     content: "";
     position: absolute;
