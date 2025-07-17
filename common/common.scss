@@ -46,22 +46,13 @@
 
     background: linear-gradient(90deg, transparent,
             rgba(243,243,243, 0.8), transparent);
+            /* Adding animation */
+    animation: loading 0.8s infinite;
+        overflow: none;
 
       } 
       
-           .custom-topic-layout :nth-child(1), .custom-topic-layout :nth-child(2), #user-content :nth-child(1), #user-content :nth-child(2)  {
-                &:before {
-
-    transform: translateX(-100%);
-
-    background: linear-gradient(90deg, transparent,
-            rgba(243,243,243, 0.8), transparent);
-              
-    /* Adding animation */
-    animation: loading 1.5s infinite;
-              }
-
-      } 
+          
       
     }
     
