@@ -1,21 +1,4 @@
 .loading-indicator-container {
-
-      ~ #main-outlet-wrapper {
-
-
-      @keyframes fadeOut {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-      
-
-      #main-outlet {
-        animation: fadeOut 0.4s;
-         animation-iteration-count: 1;
-      }
-
-  }
-  
   height: 3px;
   &.loading,
   &.still-loading {
