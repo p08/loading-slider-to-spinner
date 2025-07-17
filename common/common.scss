@@ -40,9 +40,9 @@
       // Hide #main-outlet while page loading
      #main-outlet {
 
-    animation: loading 0.8s;
+          animation: loading 0.4s;
           animation-iteration-count: 1;
-  animation-direction: alternate;
+         
 
       } 
 
