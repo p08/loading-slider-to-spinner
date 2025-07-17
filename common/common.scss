@@ -45,7 +45,7 @@
       }
       
       // Hide #main-outlet while page loading
-      #main-outlet :nth-child(1) {
+      #main-outlet {
         color: transparent; /* make the text invisible */
         user-select: none; /* prevent selection of the text */
       }
