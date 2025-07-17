@@ -42,8 +42,19 @@
         color: transparent; /* make the text invisible */
         user-select: none; /* prevent selection of the text */
         background-color: #f3f3f3;
+            background: -webkit-gradient(linear, left top,
+            right top, from(transparent),
+            color-stop(rgba(243,243,243, 1)),
+            to(transparent));
 
-      }
+    background: linear-gradient(90deg, transparent,
+            rgba(243,243,243, 1), transparent);
+
+    animation: loading 0.8s infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+      } 
 
        .custom-topic-layout, #user-content {
         overflow: hidden;;
