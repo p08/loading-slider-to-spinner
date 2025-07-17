@@ -16,17 +16,45 @@
       }
     }
     
+    // Add spinner
+    ~ #main-outlet-wrapper {
+      animation: fadeIn 5s;
+      &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
 
-/* Loading Animation */
+}
 
       @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
       
+/* Loading Animation */
+  @keyframes loading {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.7;
+    }
+  }
+      
       // Hide #main-outlet while page loading
-      #main-outlet  {
-animation: fadeIn 5s;
+      .custom-topic-layout :nth-child(1), .custom-topic-layout :nth-child(2), #user-content :nth-child(1), #user-content :nth-child(2), .cooked {
+        color: transparent; /* make the text invisible */
+        user-select: none; /* prevent selection of the text */
+        background-color: #f3f3f3;
+    background: linear-gradient(90deg, transparent,
+            rgba(243,243,243, 1), transparent);
+
+    animation: loading 0.8s infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate;
+
       } 
 
        .custom-topic-layout, #user-content {
