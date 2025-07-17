@@ -35,7 +35,9 @@
 
       #main-outlet {
         animation: fadeIn 0.4s;
-
+  opacity: 1;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
       }
 
 
