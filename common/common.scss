@@ -30,10 +30,10 @@
 /* Loading Animation */
   @keyframes loading {
     from {
-      opacity: 0;
+      opacity: 1;
     }
     to {
-      opacity: 1;
+      opacity: 0.5;
     }
   }
       
@@ -43,7 +43,7 @@
         user-select: none; /* prevent selection of the text */
         background-color: #f3f3f3;
 
-    animation: loading 0.8s infinite;
+    animation: loading 1s infinite;
           animation-iteration-count: infinite;
   animation-direction: alternate;
 
