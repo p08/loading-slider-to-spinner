@@ -17,7 +17,7 @@
     }
     
     // Add spinner
-    ~ .posts-wrapper, .custom-topic-layout {
+    ~ #main-outlet-wrapper {
       &:before {
     display: block;
     content: "";
@@ -45,9 +45,7 @@
       }
       
       // Hide #main-outlet while page loading
-      #main-outlet {
-        display: none;
-      }
+
     }
     
     // Hide modal while page loading
