@@ -17,12 +17,7 @@
     }
     
     // Add spinner
-    ~ #main-outlet-wrapper {
-      
-      &:before {
 
-
-}
 
       @keyframes fadeIn {
   0% { opacity: 1; }
@@ -53,4 +48,4 @@
       }
     }    
   }
-}
+
