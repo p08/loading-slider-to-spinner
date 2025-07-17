@@ -17,8 +17,8 @@
     }
     
     // Add spinner
-    ~ #main-outlet {
-      &:before {
+    ~ #main-outlet-wrapper {
+      &:after {
     display: block;
     content: "";
     position: absolute;
@@ -45,7 +45,9 @@
       }
       
       // Hide #main-outlet while page loading
-
+      #main-outlet {
+        display: none;
+      }
     }
     
     // Hide modal while page loading
