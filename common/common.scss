@@ -18,7 +18,24 @@
     
     // Add spinner
     ~ #main-outlet-wrapper {
+      &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    background: -webkit-gradient(linear, left top,
+            right top, from(transparent),
+            color-stop(rgba(249, 249, 249, 0.4)),
+            to(transparent));
 
+    background: linear-gradient(90deg, transparent,
+            rgba(249, 249, 249, 0.4), transparent);
+
+    /* Adding animation */
+    animation: loading 1.3s infinite;
+}
 
 /* Loading Animation */
 @keyframes loading {
@@ -27,7 +44,7 @@
     }
       }
 
-      #main-outlet-wrapper :nth-child(1), #main-outlet-wrapper :nth-child(2), #main-outlet-wrapper :nth-child(3),  {
+      #main-outlet-wrapper :nth-child(11), #main-outlet-wrapper :nth-child(12), #main-outlet-wrapper :nth-child(13),  {
         background-color: #f9f9f9;
             display: block;
     content: "";
