@@ -17,7 +17,7 @@
     }
     
     // Add spinner
-    ~ #main-outlet-wrapper :nth-child(2) {
+    ~ #main-outlet-wrapper {
       &:after {
     display: block;
     content: "";
@@ -31,7 +31,7 @@
             to(transparent));
 
     background: linear-gradient(90deg, transparent,
-            rgba(255, 255, 255, 0.2), transparent);
+            rgba(249, 249, 249, 0.2), transparent);
 
     /* Adding animation */
     animation: loading 0.8s infinite;
