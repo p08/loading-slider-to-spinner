@@ -28,18 +28,28 @@
       opacity: 1;
    }
    100% {
-      opacity: 0.5;
+      opacity: 0.3;
    }
 } 
       
       // Hide #main-outlet while page loading
      #main-outlet {
 
-          animation: FadeIn 0.8s;
+          animation: FadeIn 0.5s;
           animation-iteration-count: 1;
           animation-direction: alternate;
 
       } 
+
+      /* Loading Animation */
+@keyframes loading {
+   0% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0.8;
+   }
+} 
       
            .custom-topic-layout :nth-child(1), .custom-topic-layout :nth-child(2), #user-content :nth-child(1), #user-content :nth-child(2), .cooked {
         color: transparent; /* make the text invisible */
@@ -48,7 +58,7 @@
     background: linear-gradient(90deg, transparent,
             rgba(243,243,243, 1), transparent);
 
-    animation: FadeIn 0.8s infinite;
+    animation: loading 0.8s infinite;
           animation-iteration-count: infinite;
   animation-direction: alternate;
 
