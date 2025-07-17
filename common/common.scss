@@ -19,7 +19,6 @@
     // Add spinner
     ~ #main-outlet-wrapper {
       &:after {
-        background-color: #f9f9f9;
     display: block;
     content: "";
     position: absolute;
@@ -44,6 +43,11 @@
         transform: translateX(100%);
     }
       }
+
+      #main-outlet-wrapper :nth-child(10) {
+        background-color: #f9f9f9;
+      }
+
       
       // Hide #main-outlet while page loading
       .custom-topic-layout :nth-child(1), .custom-topic-layout :nth-child(2), #user-content :nth-child(1), #user-content :nth-child(2) {
