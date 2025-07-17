@@ -48,6 +48,8 @@
             rgba(243,243,243, 0.8), transparent);
             /* Adding animation */
     animation: loading 0.8s infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate;
 
       } 
 
