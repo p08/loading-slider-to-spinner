@@ -22,7 +22,7 @@
     display: block;
     content: "";
     position: absolute;
-    width: 100%;
+    width: 50%;
     height: 100%;
 
 }
@@ -40,13 +40,7 @@
         user-select: none; /* prevent selection of the text */
         background-color: #f3f3f3;
 
-    background: -webkit-gradient(linear, left top,
-            right top, from(transparent),
-            color-stop(rgba(249, 249, 249, 0.4)),
-            to(transparent));
 
-    background: linear-gradient(90deg, transparent,
-            rgba(249, 249, 249, 0.4), transparent);
 
     /* Adding animation */
     animation: loading 1.5s infinite;
